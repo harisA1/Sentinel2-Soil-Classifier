@@ -35,7 +35,3 @@ This repository provides a complete pipeline for classifying bare soil and veget
 
 ---
 
-## 📊 Dependencies
-
-```bash
-pip install numpy pandas xarray rioxarray rasterio matplotlib scipy
