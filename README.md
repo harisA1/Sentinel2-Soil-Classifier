@@ -16,7 +16,7 @@ This repository provides a complete pipeline for classifying bare soil and veget
 1. **Index Computation**: For each Sentinel-2 image, several spectral indices are computed:
     - NDVI
     - NBR2
-    - PV+IR2 (custom)
+    - PV+IR2 
     - BSI, NDTI, SAVI, RI, and others
 
 2. **Minimum Composite**: A pixel-wise **minimum composite** is created across the three acquisition dates to emphasize stable surface reflectance (bare soil pixels).
