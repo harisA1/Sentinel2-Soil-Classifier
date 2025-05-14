@@ -6,7 +6,7 @@ This repository provides a complete pipeline for classifying bare soil and veget
 
 ## 🛰️ Data Sources
 
-- **Sentinel-2**: Three images from different dates (`S2_enmap_AOI.tif`, `_09.tif`, `_11.tif`) used to compute spectral indices and build a **minimum-value composite** to reduce vegetation and highlight persistent bare soil.
+- **Sentinel-2**: Three images from different dates (`S2_enmap_AOI.tif`, `_09.tif`, `_11.tif`) used to compute spectral indices and build a **minimum-value composite** to capture temporal uncertainty.
 - **ESA WorldCover (10m)**: Used as reference land cover to identify Cropland and Grassland pixels.
 
 ---
@@ -19,7 +19,7 @@ This repository provides a complete pipeline for classifying bare soil and veget
     - PV+IR2 (custom)
     - BSI, NDTI, SAVI, RI, and others
 
-2. **Minimum Composite**: A pixel-wise **minimum composite** is created across the three acquisition dates to suppress transient vegetation effects and emphasize stable surface reflectance (bare soil pixels).
+2. **Minimum Composite**: A pixel-wise **minimum composite** is created across the three acquisition dates to emphasize stable surface reflectance (bare soil pixels).
 
 3. **Reprojection & Alignment**: ESA WorldCover land cover map is reprojected to align with Sentinel-2 spatial resolution and CRS.
 
